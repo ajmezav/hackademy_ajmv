@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webserver
+  labels:
+    app: webserver
+spec:
+  type: ClusterIP
+  selector:
+    app: webserver
+  ports:
+    - protocol: TCP
+      port: 80 #puerto en el que servicio va escuchar
+      targetPort: 80 # A que puerto dentro del pod voy a consumir
