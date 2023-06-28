@@ -5,7 +5,7 @@ metadata:
   labels:
     app: webserver
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: webserver
@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       - name: webserver
-        image: ajmezav/webserver:0.0.2
+        image: ajmezav/webserver:0.0.1
         imagePullPolicy: Always
