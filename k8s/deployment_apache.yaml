@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       - name: webserver
-        image: ajmezav/webserver:0.0.1
+        image: ajmezav/webserver:0.10
         imagePullPolicy: Always
